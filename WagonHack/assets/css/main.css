@@ -1,0 +1,75 @@
+* {
+  @apply select-none
+}
+
+*::-webkit-scrollbar {
+  width : 0 !important;
+}
+
+.main-screen-container {
+  @apply flex w-screen h-screen bg-yellow-300;
+}
+
+.map-container {
+  @apply w-[80%] h-screen;
+}
+
+.sidebar {
+  @apply w-[20%] h-screen bg-white;
+}
+
+.divider {
+  @apply w-full h-[2px] bg-[rgba(0,0,0,16%)]
+}
+
+.station-circle {
+  @apply h-[40px] w-[40px] rounded-[100%] bg-[#E04434] cursor-pointer;
+  @apply text-2xl font-bold text-center text-white flex items-center align-middle justify-center;
+  @apply justify-items-center;
+}
+
+.red-line {
+  @apply w-[4px] bg-[#E04434] h-[60px];
+  transform: translateX(18px);
+}
+
+.station-point-name {
+  @apply w-[300px] ml-2 overflow-hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.station-point-name:hover {
+  @apply underline;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.opacity-transform-enter-active {
+  @apply transition duration-150 ease-out
+}
+
+.opacity-transform-enter-from {
+  @apply -translate-y-1 opacity-0
+}
+
+.opacity-transform-enter-to {
+  @apply -translate-y-0 opacity-100
+}
+
+.opacity-transform-leave-active {
+  @apply transition duration-150 ease-in
+}
+
+.opacity-transform-leave-from {
+  @apply -translate-y-0 opacity-100
+}
+
+.opacity-transform-leave-to {
+  @apply -translate-y-1 opacity-0
+}

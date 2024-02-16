@@ -1,0 +1,30 @@
+{
+  "name": "data-wagon-train-map",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "core-js": "^3.25.3",
+    "interact": "^0.0.3",
+    "interactjs": "^1.10.20",
+    "nuxt": "^2.15.8",
+    "vue": "^2.7.10",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10",
+    "vue-yandex-maps": "^0.11.17",
+    "ymaps": "^0.2.1"
+  },
+  "devDependencies": {
+    "@interactjs/types": "^1.10.20",
+    "@nuxtjs/tailwindcss": "^5.3.3",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5"
+  }
+}

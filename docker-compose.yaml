@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  backend:
+    image: zavarukitsu/wagonhack-backend:1.0
+    environment:
+      - CONNECTION_STRING=sqlite:///database/base
+    volumes:
+      - ./base:/app/database/base
+    ports:
+      - 8000:5000
+  frontend:
+    image: zavarukitsu/wagonhack-frontend:1.0
+    environment:
+      - PROD=true
+    ports:
+      - 6969:3000
